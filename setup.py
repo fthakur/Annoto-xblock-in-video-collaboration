@@ -27,12 +27,12 @@ def package_data(pkg, roots):
 
 setup(
     name='annoto-xblock',
-    version='0.3.2',
+    version='0.3.3',
     description='An XBlock for adding Annoto in-video collaboration solution to any video',
     long_description=README,
     license='Apache 2.0',
     author='Annoto',
-    url='https://github.com/Annoto/xblock-in-video-collaboration',
+    url='https://github.com/fthakur/Annoto-xblock-in-video-collaboration',
     packages=[
         'annoto',
     ],
