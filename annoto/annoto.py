@@ -242,7 +242,7 @@ class AnnotoXBlock(StudioEditableXBlockMixin, XBlock):
             ]
         else:
             try:
-                jwt.PyJWS().decode(annoto_auth.get('client_id'), verify=False)
+                jwt.PyJWS().decode(annoto_auth.get('client_id'), options={"verify_signature":False})
             except:
                 context['error']['type'] = 'error'
                 context['error']['messages'] = [
